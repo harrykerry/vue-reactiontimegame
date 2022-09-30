@@ -1,5 +1,5 @@
 <template>
-  <p class="mt-3">Your time is {{score}} Milliseconds</p>
+  <p class="mt-3">Your time is {{score}} Seconds</p>
   <p>{{rank}}</p>
 
 </template>
