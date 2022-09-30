@@ -19,6 +19,7 @@ export default {
 
   mounted() {
     setTimeout(() => {
+
       this.showBlock = true;
 
       this.startTimer();
@@ -38,7 +39,16 @@ export default {
     stopTimer() {
       clearInterval(this.timer);
       this.$emit("end", this.reactionTime);
-    },
+    }
+    // calcPosition(){
+
+    //   return{
+    //     top : (_.random(0, 230)) + 'px',
+    //     left: (_.random(0, 210)) + 'px'
+    //   }
+
+    
+    
   }
 };
 </script>
