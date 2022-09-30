@@ -15,13 +15,13 @@ export default {
     },
     mounted(){
         if(this.score>=3000){
-            this.rank = "You are too slow"
+            this.rank = "You are too slow - Try again 😁"
         }else if(this.score <3000 && this.score >=1000){
 
-            this.rank = "Average Speed"
+            this.rank = "Average Speed - Jaribu Tena"
 
         }else{
-            this.rank = "The Flash"
+            this.rank = "Sawasawa Bazuu!!!"
         }
     }
   
