@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-5 squareContent" v-if="showBlock">
-    <p id="para" @click="stopTimer"></p>
-  </div>
+ 
+    <p><img src="../assets/aki.gif" id="para" class="mt-5" @click="stopTimer" v-if="showBlock"></p>
+ 
 </template>
 
 <script>
@@ -18,13 +18,17 @@ export default {
   },
 
   mounted() {
+
+    console.log("Mounted")
     setTimeout(() => {
 
       this.showBlock = true;
 
       this.startTimer();
     }, this.delay);
+
   },
+
 
   methods: {
     startTimer() {
@@ -39,34 +43,23 @@ export default {
     stopTimer() {
       clearInterval(this.timer);
       this.$emit("end", this.reactionTime);
-    }
-    // calcPosition(){
+    },
 
-    //   return{
-    //     top : (_.random(0, 230)) + 'px',
-    //     left: (_.random(0, 210)) + 'px'
-    //   }
 
-    
     
   }
 };
 </script>
 
 <style scoped>
-.squareContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-p {
-  background-color: yellow;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+img {
+
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
 }
+
+
+
 </style>

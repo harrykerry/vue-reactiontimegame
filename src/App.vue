@@ -1,16 +1,15 @@
 <template>
 <div class="mt-3">
   <h1>Harry Reaction Time Game</h1>
-  <h2>Built this while learning Vue </h2>
-  <h1>Click on the Yellow Dot (Making changes, mnaiba sana😎)</h1>
+  <h3>Click on me 😎</h3>
    
-    <button @click="toggleBlock" :disabled="isPlaying" class="btn btn-primary mt-5">Play Me</button>
+<div class="content container mt-5">
+  <button @click="toggleBlock" :disabled="isPlaying" class="btn btn-primary mt-5">Play</button>
 
-
-     <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
+   <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
 
      <Results v-if="showResults" :score="score"/>
-
+</div>
     
   
 </div>
@@ -61,6 +60,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.content{
+  border: solid 3px black;
+  height: 50vh;
 }
 
 </style>

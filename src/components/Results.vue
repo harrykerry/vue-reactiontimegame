@@ -14,9 +14,9 @@ export default {
         }
     },
     mounted(){
-        if(this.score>=3){
-            this.rank = "You are too slow - Try again 😁"
-        }else if(this.score <3 && this.score >=1){
+        if(this.score>=2.6){
+            this.rank = "Too slow fam"
+        }else if(this.score <=2.5 && this.score >=1){
 
             this.rank = "Average Speed - Jaribu Tena"
 
