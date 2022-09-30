@@ -1,7 +1,8 @@
 <template>
 <div class="mt-3">
   <h1>Harry Reaction Time Game</h1>
-  <p>Built this while learning Vue </p>
+  <h2>Built this while learning Vue </h2>
+  <h1>Click on the Yellow Dot (Making changes, mnaiba sana😎)</h1>
    
     <button @click="toggleBlock" :disabled="isPlaying" class="btn btn-primary mt-5">Play Me</button>
 

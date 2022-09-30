@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5 squareContent" v-if="showBlock">
-    <p @click="stopTimer" >Click Here</p>
+    <p @click="stopTimer" ></p>
 
   
   </div>
@@ -60,11 +60,12 @@ export default {
 p{
 
   background-color: yellow;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
  
 }
 
