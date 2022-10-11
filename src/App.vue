@@ -36,7 +36,7 @@ export default {
     toggleBlock(){
 
       this.isPlaying = true  
-      this.delay = 1000 + Math.random() * 4000
+      this.delay = 1000 + Math.random() * 6000
       this.showResults= false
     
     },

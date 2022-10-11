@@ -68,8 +68,8 @@ export default {
 
 <style scoped>
 p{
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50px;
   background-color: yellow;
   border:solid 2px black
