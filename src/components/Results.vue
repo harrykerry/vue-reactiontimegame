@@ -14,14 +14,17 @@ export default {
         }
     },
     mounted(){
-        if(this.score>=2.6){
+        if(this.score>=1.51){
             this.rank = "Too slow fam"
-        }else if(this.score <=2.5 && this.score >=1){
+        }else if(this.score <=1.5 && this.score >=0.51){
 
             this.rank = "Average Speed - Jaribu Tena"
 
+        }else if(this.score <=1 && this.score >=0.5){
+
+            this.rank = "Almoooost there"
         }else{
-            this.rank = "Sawasawa Bazuu!!!"
+            this.rank = "That was fast. Sawasawa Bazuu!!!"
         }
     }
   
