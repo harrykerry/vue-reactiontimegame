@@ -28,8 +28,7 @@ export default {
       this.showBlock = true;
 
       this.topside = this.getRandomInt(301,421);
-      this.leftside = this.getRandomInt(120,849);
-      console.log(this.leftside);
+      this.leftside = this.getRandomInt(20,350);
       
       this.box = document.getElementById('imagery');
       this.positionElement(this.box,this.leftside,this.topside);
