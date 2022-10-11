@@ -1,10 +1,10 @@
 <template>
 <div class="mt-3">
   <h1>Harry Reaction Time Game</h1>
-  <h3>Click on me 😎</h3>
+  <h3>Click on the yellow dot 😎</h3>
    
 <div class="content container mt-5">
-  <button @click="toggleBlock" :disabled="isPlaying" class="btn btn-primary mt-5">Play</button>
+  <button @click="toggleBlock" :disabled="isPlaying" class="btn btn-primary mt-2">Play</button>
 
    <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
 
@@ -36,7 +36,7 @@ export default {
     toggleBlock(){
 
       this.isPlaying = true  
-      this.delay = 2000 + Math.random() * 7000
+      this.delay = 1000 + Math.random() * 4000
       this.showResults= false
     
     },
@@ -46,7 +46,8 @@ export default {
       this.isPlaying = false
       this.showResults = true
 
-    }
+    },
+    
   }
 
 }
@@ -60,11 +61,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
 }
 
-.content{
+
+/* .content{
   border: solid 3px black;
   height: 50vh;
-}
+} */
 
 </style>
