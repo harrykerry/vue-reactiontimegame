@@ -1,4 +1,5 @@
 <template>
+
 <div class="borders">
   <div id="imagery">
     <p @click="stopTimer" v-if="showBlock"></p>
@@ -22,6 +23,7 @@ export default {
       box:null
     };
   },
+
 
   mounted() {
     setTimeout(() => {
